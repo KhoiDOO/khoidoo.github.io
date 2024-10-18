@@ -1,10 +1,10 @@
 ---
 layout: post
-title: a post with math
-date: 2015-10-20 11:12:00-0400
-description: an example of a blog post with some math
-tags: formatting math
-categories: sample-posts
+title: Diffusion Models - A Cleaned Mathematical Explaination
+date: 2024-10-18 11:12:00-0400
+description: A Cleaned Mathematical Explaination
+tags: diffusion
+categories: generative-ai
 related_posts: false
 ---
 
