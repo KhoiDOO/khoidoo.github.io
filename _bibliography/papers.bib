@@ -1,24 +1,25 @@
 ---
 ---
 
-@string{aps = {Artificial Intelligence Society,}}
+@string{aps={Artificial Intelligence Society,}}
 
 @Article{s22197530,
-AUTHOR = {Nguyen, Viet Dung and Bui, Ngoc Dung and Do, Hoang Khoi},
-TITLE = {Skin Lesion Classification on Imbalanced Data Using Deep Learning with Soft Attention},
-JOURNAL = {Sensors},
-VOLUME = {22},
-YEAR = {2022},
-NUMBER = {19},
-ARTICLE-NUMBER = {7530},
-URL = {https://www.mdpi.com/1424-8220/22/19/7530},
-PubMedID = {36236628},
-ISSN = {1424-8220},
-ABSTRACT = {Today, the rapid development of industrial zones leads to an increased incidence of skin diseases because of polluted air. According to a report by the American Cancer Society, it is estimated that in 2022 there will be about 100,000 people suffering from skin cancer and more than 7600 of these people will not survive. In the context that doctors at provincial hospitals and health facilities are overloaded, doctors at lower levels lack experience, and having a tool to support doctors in the process of diagnosing skin diseases quickly and accurately is essential. Along with the strong development of artificial intelligence technologies, many solutions to support the diagnosis of skin diseases have been researched and developed. In this paper, a combination of one Deep Learning model (DenseNet, InceptionNet, ResNet, etc) with Soft-Attention, which unsupervisedly extract a heat map of main skin lesions. Furthermore, personal information including age and gender are also used. It is worth noting that a new loss function that takes into account the data imbalance is also proposed. Experimental results on data set HAM10000 show that using InceptionResNetV2 with Soft-Attention and the new loss function gives 90 percent accuracy, mean of precision, F1-score, recall, and AUC of 0.81, 0.81, 0.82, and 0.99, respectively. Besides, using MobileNetV3Large combined with Soft-Attention and the new loss function, even though the number of parameters is 11 times less and the number of hidden layers is 4 times less, it achieves an accuracy of 0.86 and 30 times faster diagnosis than InceptionResNetV2.},
-DOI = {10.3390/s22197530}
+AUTHOR={Nguyen, Viet Dung and Bui, Ngoc Dung and Do, Hoang Khoi},
+TITLE={Skin Lesion Classification on Imbalanced Data Using Deep Learning with Soft Attention},
+JOURNAL={Sensors},
+VOLUME={22},
+YEAR={2022},
+NUMBER={19},
+ARTICLE-NUMBER={7530},
+URL={https://www.mdpi.com/1424-8220/22/19/7530},
+PubMedID={36236628},
+ISSN={1424-8220},
+ABSTRACT={Today, the rapid development of industrial zones leads to an increased incidence of skin diseases because of polluted air. According to a report by the American Cancer Society, it is estimated that in 2022 there will be about 100,000 people suffering from skin cancer and more than 7600 of these people will not survive. In the context that doctors at provincial hospitals and health facilities are overloaded, doctors at lower levels lack experience, and having a tool to support doctors in the process of diagnosing skin diseases quickly and accurately is essential. Along with the strong development of artificial intelligence technologies, many solutions to support the diagnosis of skin diseases have been researched and developed. In this paper, a combination of one Deep Learning model (DenseNet, InceptionNet, ResNet, etc) with Soft-Attention, which unsupervisedly extract a heat map of main skin lesions. Furthermore, personal information including age and gender are also used. It is worth noting that a new loss function that takes into account the data imbalance is also proposed. Experimental results on data set HAM10000 show that using InceptionResNetV2 with Soft-Attention and the new loss function gives 90 percent accuracy, mean of precision, F1-score, recall, and AUC of 0.81, 0.81, 0.82, and 0.99, respectively. Besides, using MobileNetV3Large combined with Soft-Attention and the new loss function, even though the number of parameters is 11 times less and the number of hidden layers is 4 times less, it achieves an accuracy of 0.86 and 30 times faster diagnosis than InceptionResNetV2.},
+DOI={10.3390/s22197530},
+code={https://github.com/KhoiDOO/SLC-ID-SA}
 }
 
-@INPROCEEDINGS{10013868,
+@inproceedings{10013868,
 author={Nguyen, Viet Dung and Luong, Minh Phuong and Do, Hoang Khoi},
 booktitle={2022 RIVF International Conference on Computing and Communication Technologies (RIVF)}, 
 title={Endoscopic Image Classification using Block-based Color Feature Descriptors}, 
@@ -27,7 +28,8 @@ volume={},
 number={},
 pages={214-219},
 keywords={Visualization;Image color analysis;Endoscopes;Spraying;Color;Gastroenterology;Feature extraction;endoscopy;feature extraction;color descriptor;classification},
-doi={10.1109/RIVF55975.2022.10013868}}
+doi={10.1109/RIVF55975.2022.10013868},
+code={https://github.com/ScaleMind-C9308A/CE-AB-CLS}}
 
 @misc{do2024revisitinglarslargebatch,
 title={Revisiting LARS for Large Batch Training Generalization of Neural Networks}, 
@@ -36,7 +38,9 @@ year={2024},
 eprint={2309.14053},
 archivePrefix={arXiv},
 primaryClass={cs.LG},
-url={https://arxiv.org/abs/2309.14053}}
+url={https://arxiv.org/abs/2309.14053},
+code={https://github.com/KhoiDOO/tvlars},
+abstract={This paper explores Large Batch Training techniques using layer-wise adaptive scaling ratio (LARS) across diverse settings, uncovering insights. LARS algorithms with warm-up tend to be trapped in sharp minimizers early on due to redundant ratio scaling. Additionally, a fixed steep decline in the latter phase restricts deep neural networks from effectively navigating early-phase sharp minimizers. Building on these findings, we propose Time Varying LARS (TVLARS), a novel algorithm that replaces warm-up with a configurable sigmoid-like function for robust training in the initial phase. TVLARS promotes gradient exploration early on, surpassing sharp optimizers and gradually transitioning to LARS for robustness in later phases. Extensive experiments demonstrate that TVLARS consistently outperforms LARS and LAMB in most cases, with up to 2% improvement in classification scenarios. Notably, in all self-supervised learning cases, TVLARS dominates LARS and LAMB with performance improvements of up to 10%.}}
 
 @misc{nguyen2024layerwisepersonalizedfederatedlearning,
 title={Towards Layer-Wise Personalized Federated Learning: Adaptive Layer Disentanglement via Conflicting Gradients}, 
@@ -45,9 +49,11 @@ year={2024},
 eprint={2410.02845},
 archivePrefix={arXiv},
 primaryClass={cs.LG},
-url={https://arxiv.org/abs/2410.02845}}
+url={https://arxiv.org/abs/2410.02845},
+code={https://github.com/khanhkhanhlele/FedLAG},
+abstract={In personalized Federated Learning (pFL), high data heterogeneity can cause significant gradient divergence across devices, adversely affecting the learning process. This divergence, especially when gradients from different users form an obtuse angle during aggregation, can negate progress, leading to severe weight and gradient update degradation. To address this issue, we introduce a new approach to pFL design, namely Federated Learning with Layer-wise Aggregation via Gradient Analysis (FedLAG), utilizing the concept of gradient conflict at the layer level. Specifically, when layer-wise gradients of different clients form acute angles, those gradients align in the same direction, enabling updates across different clients toward identifying client-invariant features. Conversely, when layer-wise gradient pairs make create obtuse angles, the layers tend to focus on client-specific tasks. In hindsights, FedLAG assigns layers for personalization based on the extent of layer-wise gradient conflicts. Specifically, layers with gradient conflicts are excluded from the global aggregation process. The theoretical evaluation demonstrates that when integrated into other pFL baselines, FedLAG enhances pFL performance by a certain margin. Therefore, our proposed method achieves superior convergence behavior compared with other baselines. Extensive experiments show that our FedLAG outperforms several state-of-the-art methods and can be easily incorporated with many existing methods to further enhance performance.}}
 
-@INPROCEEDINGS{10207979,
+@inproceedings{10207979,
 author={Do, Hoang Khoi and Quynh Dinh, Thi and Nguyen, Minh Duong and Hoa Nguyen, Tien},
 booktitle={2023 IEEE Statistical Signal Processing Workshop (SSP)}, 
 title={Semantic Communication for Partial Observation Multi-agent Reinforcement Learning}, 
@@ -56,17 +62,12 @@ volume={},
 number={},
 pages={319-323},
 keywords={Training;Metalearning;Costs;Conferences;Aggregates;Semantics;Reinforcement learning;Communication efficiency;Multi-agent Reinforcement Learning;Semantic Communication},
-doi={10.1109/SSP53291.2023.10207979}}
+doi={10.1109/SSP53291.2023.10207979},
+code={https://github.com/ScaleMind-C9308A/some}}
 
-@InProceedings{10.1007/978-981-99-4725-6_31,
-author="Nguyen, T-Binh
-and Do, H-Khoi
-and Nguyen, M-Duong
-and Nguyen, T-Hoa",
-editor="Nguyen, Thi Dieu Linh
-and Verd{\'u}, Elena
-and Le, Anh Ngoc
-and Ganzha, Maria",
+@inproceedings{10.1007/978-981-99-4725-6_31,
+author="Nguyen, T-Binh and Do, H-Khoi and Nguyen, M-Duong and Nguyen, T-Hoa",
+editor="Nguyen, Thi Dieu Linh and Verd{\'u}, Elena and Le, Anh Ngoc and Ganzha, Maria",
 title="Personal Federated Learning via Momentum Target with Self-Improvement",
 booktitle="Intelligent Systems and Networks",
 year="2023",
@@ -76,20 +77,14 @@ pages="247--253",
 abstract="Federated learning (FL) is a new artificial intelligence concept that enables Internet-of-Things (IoT) devices to learn a collaborative model without sending the raw data to centralized nodes for processing. Despite numerous advantages, Federated Learning faces huge challenges from model overfitting due to the lack of data and statistical diversity among clients. To address these challenges, we propose a novel personalized federated learning method via momentum adaptation, the so-called pFLTI. Specifically, pFLTI generates the target model by adapting from the temporal ensemble of the meta-learner, i.e., the momentum network. This momentum network and its task-specific adaptations enjoy a favorable generalization performance, enabling self-improving of the meta-learner through knowlodels to find the across task relationsedge distillation. Moreover, we found that perturbing parameters of the meta-learner, e.g., dropout, further stabilize this self-improving process by preventing fast convergence of the distillation loss during meta-training. Our experimental results demonstrate that our algorithm is awesome.",
 isbn="978-981-99-4725-6"}
 
-@InProceedings{10.1007/978-3-031-44630-6_43,
-author="Nguyen, Viet Dung
-and Trinh, Hoang Nam
-and Do, Hoang Khoi",
-editor="Vo, Van Toi
-and Nguyen, Thi-Hiep
-and Vong, Binh Long
-and Le, Ngoc Bich
-and Nguyen, Thanh Qua",
+@inproceedings{10.1007/978-3-031-44630-6_43,
+author="Nguyen, Viet Dung and Trinh, Hoang Nam and Do, Hoang Khoi",
+editor="Vo, Van Toi and Nguyen, Thi-Hiep and Vong, Binh Long and Le, Ngoc Bich and Nguyen, Thanh Qua",
 title="Block-Based Texture Features for Chromoendoscopy Classification",
 booktitle="9th International Conference on the Development of Biomedical Engineering in Vietnam",
 year="2024",
 publisher="Springer Nature Switzerland",
 address="Cham",
 pages="529--539",
-abstract="Globally, there has been an upsurge in concern about stomach cancer in recent years. One of the key factors contributing to gastrointestinal (GI) tract abnormalities, such as ulcers and inflammation, is an improper diet. Additionally, these anomalies might aid in the growth of stomach cancer. Compared to biopsy, endoscopy is a less invasive way to screen gastric cancer and other GI tract abnormalities. In chromoendoscopy, one of the advancements to endoscopy, abnormal regions are made more visible visually by spraying colors over the mucosal surface. However, identifying abnormal regions in the frames taken during a chromoendoscopic session is still challenging. Basic visual cues like textures help to identify objects. They are helpful for inspecting abnormal spots in endoscopic frames as well. Several methods for representing texture and classifying endoscopic images have been developed. In this study, we proposed block-based texture features, especially Block Difference of Inverse Probabilities (BIDP) and Block Variation of Local Correlation Coefficients (BVLC), to represent the chromoendoscopic texture. The extracted features are then used to classify the chromoendoscopic image into normal and abnormal. On the dataset obtained using an Olympus CV-180 endoscope at the Portuguese Institute of Oncology (IPO) Hospital in Porto, Portugal, the proposed scheme has a classification accuracy of 88.9{\%} and an area under the curve (AUC) value of 0.95, according to experimental results. It is proved that combining the BDIP and BLVC texture descriptors exhibits an excellent discrimination performance on the chromoendoscopic images. Though the proposed method is limited to chromoendoscopic images, it has the potential to be generalized by using images obtained from various imaging modalities under a variety of unhealthy conditions.",
+abstract="Globally, there has been an upsurge in concern about stomach cancer in recent years. One of the key factors contributing to gastrointestinal (GI) tract abnormalities, such as ulcers and inflammation, is an improper diet. Additionally, these anomalies might aid in the growth of stomach cancer. Compared to biopsy, endoscopy is a less invasive way to screen gastric cancer and other GI tract abnormalities. In chromoendoscopy, one of the advancements to endoscopy, abnormal regions are made more visible visually by spraying colors over the mucosal surface. However, identifying abnormal regions in the frames taken during a chromoendoscopic session is still challenging. Basic visual cues like textures help to identify objects. They are helpful for inspecting abnormal spots in endoscopic frames as well. Several methods for representing texture and classifying endoscopic images have been developed. In this study, we proposed block-based texture features, especially Block Difference of Inverse Probabilities (BIDP) and Block Variation of Local Correlation Coefficients (BVLC), to represent the chromoendoscopic texture. The extracted features are then used to classify the chromoendoscopic image into normal and abnormal. On the dataset obtained using an Olympus CV-180 endoscope at the Portuguese Institute of Oncology (IPO) Hospital in Porto, Portugal, the proposed scheme has a classification accuracy of 88.9{%} and an area under the curve (AUC) value of 0.95, according to experimental results. It is proved that combining the BDIP and BLVC texture descriptors exhibits an excellent discrimination performance on the chromoendoscopic images. Though the proposed method is limited to chromoendoscopic images, it has the potential to be generalized by using images obtained from various imaging modalities under a variety of unhealthy conditions.",
 isbn="978-3-031-44630-6"}
