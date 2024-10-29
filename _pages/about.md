@@ -22,7 +22,7 @@ social: true # includes social icons at the bottom of the page
 - **Resume**: My (might-be-outdated) resume is availabel [here](assets/pdf/profile/cv.pdf)
 
 ## Areas of Interest
-- **Generative AI**: Variational Ingerence, Mode Collapse.
+- **Generative AI**: Variational Inference, Mode Collapse.
 - **3D Content Generation**: 3D-Aware Learning, Diversity.
 
 ## Biography 
