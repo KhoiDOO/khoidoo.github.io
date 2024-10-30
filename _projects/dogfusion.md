@@ -4,7 +4,7 @@ title: DogFusion
 description: DogFusion - Dog Image Generation.
 img: assets/img/projects/dogfusion.png
 importance: 1
-category: work
+category: generative-ai
 related_publications: false
 ---
 

@@ -4,7 +4,7 @@ title: Nerf-Lightning
 description: Nerf-Lightning - An archive of Nerf Algorithms
 img: assets/img/projects/nerf.jpg
 importance: 1
-category: work
+category: generative-ai
 related_publications: false
 ---
 
