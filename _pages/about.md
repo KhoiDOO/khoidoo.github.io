@@ -27,12 +27,26 @@ social: true # includes social icons at the bottom of the page
 
 ## Biography 
 
-I am a PhD student at the School of Computer Science and Statistics, Trinity College Dublin, Ireland. My research is sponsored by a grant titled "Language3D: Creating Editable 3D Content from Deep Language Understanding for 3D-First Digital Platforms," led by [Dr. Binh-Son Hua](https://sonhua.github.io/).
+I am a PhD student at the School of Computer Science and Statistics, Trinity College Dublin, Ireland. My research is sponsored by a grant titled "Language3D: Creating Editable 
+3D Content from Deep Language Understanding for 3D-First Digital Platforms," led by [Dr. Binh-Son Hua](https://sonhua.github.io/).
 
-I began learning programming in 6th grade, starting with C and C++, which was both challenging and rewarding. By the end of secondary school, I had developed several software applications in C# and WAP, including a coffee shop management system and an English dictionary. In high school, I explored embedded systems, working with 8051 microcontroller kits to create simple embedded applications before returning to focus on software engineering.
+I began learning programming in 6th grade, starting with [C]() and [C++](), which was both challenging and rewarding. By the end of secondary school, I had developed several software 
+applications in [C#]() and [WAP](), including a coffee shop management system and an English dictionary. In high school, I explored embedded systems, working with [8051]() microcontroller 
+kits to create simple embedded applications before returning to focus on software engineering.
 
-In 2020, I became a finalist in the Intel International Science and Engineering Fair, where I presented a VR-based Virtual Laboratory for simulating chemistry reactions. Building on the success of that project, I landed my first internship as a Software Engineer, focusing on developing motion-tracking applications and games for AR, VR, and MR platforms. During this time, I also began shifting my focus toward artificial intelligence, intrigued by its potential to enhance immersive technologies.
+In 2020, I became a finalist in the Intel International Science and Engineering Fair, where I presented a [VR-based Virtual Laboratory](https://khoidoo.github.io/al-folio/projects/virtual-chem-lab/) for simulating chemistry reactions. 
+Building on the success of that project, I landed my first internship as a Software Engineer, focusing on developing [motion-tracking]() applications and games for [AR](), [VR](), and [MR]() 
+platforms. During this time, I also began shifting my focus toward artificial intelligence, intrigued by its potential to enhance immersive technologies.
 
-In my second year as an undergraduate, I co-founded ScaleMind Research, a Vietnam-based tech start-up developing an AI-driven recruitment platform, with seed funding from Antler Venture Capital. I also organized and led an undergraduate AI research team of 22 members focused on creating an AI-based diagnostic system for healthcare applications, which successfully published five papers with promising results. My industry experience also includes contributing to a confidential document information extraction system with the TrueID team at VNG, funded by an investment from Asia Commercial Bank, and developing a receipt-to-voucher conversion system capable of processing 2,000 receipts per second with the Gotit team.
+In my second year as an undergraduate, I co-founded [ScaleMind Research](), a Vietnam-based tech start-up developing an AI-driven recruitment platform, with seed funding from 
+[Antler Venture Capital](https://www.antler.co/location/vietnam). I also organized and led an undergraduate AI research team of [22]() members focused on creating an AI-based 
+diagnostic system for healthcare applications, which successfully published five papers with promising results. My industry experience also includes contributing to a 
+confidential document information extraction system with the [TrueID](https://www.linkedin.com/products/vng-digital-business-trueid/) team at VNG, funded by an investment 
+from [Asia Commercial Bank](https://acb.com.vn/en), and developing a receipt-to-voucher conversion system capable of processing 2,000 receipts per second with the 
+[Gotit](https://www.gotit.vn/) team.
 
-I earned my Bachelor’s degree in 2024 from the Hanoi University of Science and Technology under the supervision of [Dr. Viet Dung Nguyen](https://scholar.google.com/citations?user=3FN8qi0AAAAJ&hl=en), focusing my research on long-tailed segmentation. My bachelor’s thesis can be found [here](assets/pdf/thesis/grad.pdf). From 2022 to 2024, I, along with my close collaborator [Minh Duong Nguyen](https://scholar.google.com/citations?user=3ea0RLkAAAAJ&hl=en), had the opportunity to work under the guidance of top-tier professors: [Prof. Nguyen Hoang Tran](https://nguyenhoangtran.github.io/), [Prof. Long Tran-Thanh](https://warwick.ac.uk/fac/sci/dcs/people/long_tran-thanh/), and [Prof. Quoc-Viet Pham](https://www.scss.tcd.ie/viet.pham/) on large-batch training and long-tailed segmentation.
+I earned my Bachelor’s degree in 2024 from the Hanoi University of Science and Technology under the supervision of [Dr. Viet Dung Nguyen](https://scholar.google.com/citations?user=3FN8qi0AAAAJ&hl=en), 
+focusing my research on long-tailed segmentation. My bachelor’s thesis can be found [here](assets/pdf/thesis/grad.pdf). From 2022 to 2024, I, along with my close collaborator 
+[Minh Duong Nguyen](https://scholar.google.com/citations?user=3ea0RLkAAAAJ&hl=en), had the opportunity to work under the guidance of top-tier professors: 
+[Prof. Nguyen Hoang Tran](https://nguyenhoangtran.github.io/), [Prof. Long Tran-Thanh](https://warwick.ac.uk/fac/sci/dcs/people/long_tran-thanh/), and 
+[Prof. Quoc-Viet Pham](https://www.scss.tcd.ie/viet.pham/) on large-batch training and long-tailed segmentation.
