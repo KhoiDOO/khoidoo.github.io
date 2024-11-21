@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 ## Contact Information
 - **Email**: dokh@tcd.ie
 - **Phone**: (+353) 894 719 603
-- **Resume**: My (might-be-outdated) resume is availabel [here](assets/pdf/profile/cv.pdf)
+- **Resume**: My (might-be-outdated) resume is available [here](assets/pdf/profile/cv.pdf)
 
 ## Areas of Interest
 - **Generative AI**: Variational Inference, Mode Collapse.
@@ -37,5 +37,5 @@ In my second undergraduation year (2022), I co-founded ScaleMind Research, a Vie
 
 From 2023, my industry experience also includes contributing to a confidential document information extraction system with the [TrueID](https://www.linkedin.com/products/vng-digital-business-trueid/) team at VNG, funded by an investment from [Asia Commercial Bank](https://acb.com.vn/en), and developing a receipt-to-voucher conversion system capable of processing 2,000 receipts per second with the [Gotit](https://www.gotit.vn/) team.
 
-I earned my Bachelor’s degree in 2024 from the Hanoi University of Science and Technology under the supervision of [Dr. Viet Dung Nguyen](https://scholar.google.com/citations?user=3FN8qi0AAAAJ&hl=en), focusing my research on long-tailed segmentation (my bachelor’s thesis is available [here](assets/pdf/thesis/grad.pdf)). From 2022 to 2024, I and my closes collaborator [Minh Duong Nguyen](https://scholar.google.com/citations?user=3ea0RLkAAAAJ&hl=en), had the opportunity to work under the guidance of top-tier professors: [Prof. Nguyen Hoang Tran](https://nguyenhoangtran.github.io/), [Prof. Long Tran-Thanh](https://warwick.ac.uk/fac/sci/dcs/people/long_tran-thanh/), and 
+I earned my Bachelor’s degree in 2024 from the Hanoi University of Science and Technology under the supervision of [Dr. Viet Dung Nguyen](https://scholar.google.com/citations?user=3FN8qi0AAAAJ&hl=en), focusing my research on long-tailed segmentation (my bachelor’s thesis is available [here](assets/pdf/thesis/grad.pdf)). From 2022 to 2024, I and my close collaborator [Minh Duong Nguyen](https://scholar.google.com/citations?user=3ea0RLkAAAAJ&hl=en), had the opportunity to work under the guidance of top-tier professors: [Prof. Nguyen Hoang Tran](https://nguyenhoangtran.github.io/), [Prof. Long Tran-Thanh](https://warwick.ac.uk/fac/sci/dcs/people/long_tran-thanh/), and 
 [Prof. Quoc-Viet Pham](https://www.scss.tcd.ie/viet.pham/) on large-batch training and long-tailed segmentation.
