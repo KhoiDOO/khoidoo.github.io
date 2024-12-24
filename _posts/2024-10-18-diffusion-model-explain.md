@@ -108,7 +108,7 @@ $$
 
 Typically, a larger update step can be taken when the sample becomes noisier, so $$\beta_1 < \beta_2<\ldots< \beta_T$$ and therefore $$\bar\alpha_1> \bar\alpha_2>\ldots>\bar\alpha_T $$.
 
-## Reverse Process
+# Reverse Process
 The *reverse process* (refers to Equation \eqref{eq:rev}) is the joint distribution $$p_\theta(x_{0:T})$$, defined as a Markov chain with *learned Gaussian transitiion* starting at $$p(x_T) = \mathcal{N}(x_T, 0, \textbf{I})$$. By conducting the reverse process, the model will be able to recreate the true sample from a Gaussian noise input, $$x_T \sim \mathcal{N}(0, \textbf{I})$$. 
 
 $$\begin{align}\label{eq:rev}
@@ -123,9 +123,9 @@ $$\begin{align}
 
 where the transition probability distribution is expected to be Gaussian distribution with mean and variance approximated by $$\boldsymbol{\mu}_\theta(x_t, t)$$ and $$\boldsymbol{\Sigma}_\theta(x_t, t)$$. Note that both $$\boldsymbol{\mu}_\theta$$ and $$\boldsymbol{\Sigma}_\theta(x_t, t)$$ are conditioned on $$t$$, considered as a positional encoding or *timestep guidance*.
 
-### Loss function
+## Loss function
 
-#### Maximum Likelihood Learning.
+### Maximum Likelihood Learning.
 
 DDPM([DDPM](https://arxiv.org/abs/2006.11239)) objective function also minimizes the "closeness" between data distribution $$\log p_{\rm data}(x_0)$$ and empirical estimated distribution $$p_\theta(x_0)$$ as VAEs([VAE](https://arxiv.org/abs/1312.6114)), by maximizing the estimated entropy or negative log-likelihood (refers to Equation \eqref{eq:nlll}), which is detailedly derived at Section [APXMLL](#maximum-likelihood-learning-1).
 
@@ -146,7 +146,7 @@ $$\begin{align}
     -\log p_\theta(x_0) &\leq -\log p_\theta(x_0) + \mathcal{D}_{\rm KL}(q(x_{1:T}|x_0)\|p_\theta(x_{1:T}|x_0))
 \end{align}$$
 
-#### Variational Lower Bound.
+### Variational Lower Bound.
 
 Based on VAE([VAE](https://arxiv.org/abs/1312.6114)) setup, the loss function is the negative log-likelihood optimized by a variational lower bound (refers to Equation \eqref{eq:diff-lvb}). The entropy of the input data $$\mathcal{H}(x_0) = -\log p_\theta(x_0)$$ now has the upper bound, presented in the last equal sign. The reverse process loss function then minimizes this upper bound (variational lower bound can be proven using Jensen's equality at Section [Variational Lower Bound based Jensen's Equality](#variational-lower-bound-based-jensens-equality)). 
 
@@ -161,7 +161,7 @@ $$\begin{align}\label{eq:diff-lvb}
     &=\mathbb{E}_{x_{1:T}\sim q(x_{1:T}|x_0)}\left[\log\frac{q(x_{1:T}|x_0)}{p_\theta(x_{0:T})}\right]
 \end{align}$$
 
-#### Training Loss Function $$\mathcal{L}_{\rm VLB}$$.
+### Training Loss Function $$\mathcal{L}_{\rm VLB}$$.
 
 From Equation \eqref{eq:diff-lvb}, the training loss function is then expressed as follows:
 
@@ -214,7 +214,7 @@ $$\begin{align}
     &= \mathbb{E}_{q}\left[\underbrace{\mathcal{D}_{\rm KL}(q(x_T\mid x_0) \| p_\theta(x_T))}_{\mathcal{L}_T}+ \sum_{t=2}^T\underbrace{\mathcal{D}_{\rm KL}(\textcolor{red}{q(x_{t-1} \mid x_t, x_0)})\|p_\theta(x_{t-1}\mid x_t))}_{\mathcal{L}_{t-1}}-\underbrace{\log(p_\theta(x_0\mid x_1))}_{\mathcal{L}_0}\right] \label{eq:final-general-vlb}
 \end{align}$$
 
-#### Conditional Forward Transition Estimation.
+### Conditional Forward Transition Estimation.
 
 It is noteworthy that the reverse conditional probability is tractable when conditioned on $$x_0$$ (refers to Equation \eqref{eq:vlb-norm-x0}). To estimate $$\textcolor{red}{q(x_{t-1} \mid x_t, x_0)}$$, ([DDPM](https://arxiv.org/abs/2006.11239)) considers the probability as Gaussian distribution and tried to find $$\boldsymbol{\tilde{\mu}}(x_{t-1}, x_0)$$ and $$\tilde{\beta}_t$$.
 
@@ -288,7 +288,7 @@ $$\begin{align}
     &=\frac{1}{\sqrt{a_t}}\Big(x_t - \frac{1-a_t}{\sqrt{(1-\bar{a}_t)}}\epsilon_t\Big)\label{eq:final-mu-tidle}
 \end{align}$$
 
-#### Loss function parameterization.
+### Loss function parameterization.
 
 Recall that a neural network needs training to approximate the conditional probability in the *reverse process* $$p_\theta(x_{t-1}\mid x_{t}) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\theta(x_t, t)$$. Therefore, model $$\mu_\theta$$ needs training to predict $$\mu_t = \frac{1}{\sqrt{a_t}}(x_t - \frac{1-a_t}{\sqrt{1 - \bar{a}_t}}\epsilon_t)$$ (refers to Equation \eqref{eq:final-mu-tidle}). 
 
