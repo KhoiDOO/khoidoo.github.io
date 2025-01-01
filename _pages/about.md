@@ -7,9 +7,10 @@ subtitle: PhD Student at Trinity College Dublin, Ireland
 profile:
   align: right
   image: ava.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: 
+  image_circular: false
+  more_info:
     <p>Good spirit for any challenge!</p>
+    <p>Happy New Year 2025!</p>
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
