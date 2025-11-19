@@ -10,14 +10,19 @@
   --left-col-width:256px; /* left/profile column width */
   --avatar-size:224px; /* avatar size */
   --name-size:30px; /* name size */
-  --social-icon-size:50px; /* controls social SVG size */
+  --social-icon-size:30px; /* controls social SVG size */
   --social-gap:12px; /* gap between social icons */
-  /* Publication thumbnail sizing (customize as needed) */
-  --pub-thumb-width:140px;
-  --pub-thumb-height:100px;
-  --pub-thumb-width-sm:72px;
-  --pub-thumb-height-sm:54px;
-  --pub-thumb-height-mobile:160px;
+  /* Publication thumbnail sizing (customize by changing --pub-thumb-base) */
+  --pub-thumb-base:160px; /* change this single value to scale thumbnails */
+  --pub-thumb-width: var(--pub-thumb-base);
+  --pub-thumb-height: calc(var(--pub-thumb-base) * 0.69); /* ~130px when base=180 */
+  --pub-thumb-width-sm: calc(var(--pub-thumb-base) * 0.56); /* ~100px */
+  --pub-thumb-height-sm: calc(var(--pub-thumb-width-sm) * 0.8); /* ~80px */
+  --pub-thumb-height-mobile: calc(var(--pub-thumb-base) * 0.888); /* ~160px */
+  /* Default thumbnail object-fit/position: change to keep left side visible */
+  /* show full image without cropping by default */
+  --pub-thumb-object-fit: contain;
+  --pub-thumb-object-position: center center;
 }
 
 *{box-sizing:border-box}
@@ -72,8 +77,9 @@ h3.section{
 .pubs{font-size:14px}
 .pubs-list{display:flex;flex-direction:column;gap:12px}
 .pub{display:flex;gap:12px;align-items:flex-start;padding:10px 6px;border-radius:6px}
-.pub-thumb{flex:0 0 var(--pub-thumb-width);width:var(--pub-thumb-width);height:var(--pub-thumb-height);overflow:hidden;background:#eee;border-radius:4px}
+.pub-thumb{flex:0 0 var(--pub-thumb-width);width:var(--pub-thumb-width);height:var(--pub-thumb-height);max-width:100%;overflow:hidden;background:#eee;border-radius:4px}
 .pub-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.pub-thumb img{width:100%;height:100%;object-fit:var(--pub-thumb-object-fit,cover);object-position:var(--pub-thumb-object-position,center center);display:block}
 .pub-meta{flex:1;min-width:0}
 .pub-title{font-weight:700;margin-bottom:6px}
 .pub-title a{color:var(--text);text-decoration:none}
