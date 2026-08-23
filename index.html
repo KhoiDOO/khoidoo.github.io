@@ -2,54 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hoang Khoi Do</title>
-  <meta name="description" content="Academic homepage template in a single file (index.html)." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoang Khoi Do | Academic Homepage</title>
+  <meta name="description" content="Personal academic homepage and research portfolio of Hoang Khoi Do, CS PhD Student at Trinity College Dublin (GV2 Lab)." />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,700;1,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 
   <div class="wrap" id="top">
+    <!-- Left Sidebar Column -->
     <header class="side">
       <div class="header-inner">
         <h1 class="name"><a href="#" class="home-link">Hoang Khoi Do</a></h1>
 
         <div class="photo" aria-hidden="true">
-          <!-- Replace src with your photo -->
-          <img src="ava.jpg" alt="Photo">
+          <img src="ava.jpg" alt="Hoang Khoi Do Portrait" loading="eager">
         </div>
 
-        <p class="pos">CS PhD Student</p>
+        <span class="pos">CS PhD Student</span>
 
         <div class="affiliations">
-          <a href="https://gv2.scss.tcd.ie/" target="_blank">Graphics and Vision</a>
-          <a href="https://www.tcd.ie/" target="_blank">Trinity College Dublin</a>
-          <span class="inline-pair"><a href="https://hust.edu.vn/en/" target="_blank">HUST</a><a href="https://seee.hust.edu.vn/" target="_blank">SEEE</a></span>
+          <a href="https://gv2.scss.tcd.ie/" target="_blank" rel="noopener">Graphics and Vision (GV2)</a>
+          <a href="https://www.tcd.ie/" target="_blank" rel="noopener">Trinity College Dublin</a>
         </div>
 
         <div class="links">
-          <a href="resume.pdf" target="_blank">CV/Résumé (update 18th Nov 2025)</a>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="cv-button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8v-2zm0-4h8v2H8v-2z"/></svg>
+            CV / Résumé (2026)
+          </a>
         </div>
 
-        <div class="social" aria-label="social links">
-          <a class="icon" href="https://github.com/KhoiDOO" target="_blank" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <div class="social" aria-label="Social profiles and contact">
+          <a class="icon-btn" href="https://github.com/KhoiDOO" target="_blank" rel="noopener" aria-label="GitHub Profile" title="GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
               <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
             </svg>
           </a>
 
-          <a class="icon" href="mailto:dokh@tcd.ie" aria-label="Email">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <a class="icon-btn" href="mailto:dokh@tcd.ie" aria-label="Email Contact" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
           </a>
 
-          <a class="icon" href="https://scholar.google.com/citations?user=MDLVBrAAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <a class="icon-btn" href="https://scholar.google.com/citations?user=MDLVBrAAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar Profile" title="Google Scholar">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 2L1 7l11 5 9-4.09V11h2V7L12 2z"/>
               <path d="M4 10v2l8 4 8-4v-2l-8 4-8-4z"/>
               <path d="M11 14v6h2v-6h-2z"/>
@@ -58,102 +62,598 @@
         </div>
       </div>
 
-      <div class="aside-section">
-        <strong>Research Interests</strong>
-        <div style="margin-top:6px;color:#333">Conditional 3D Content Synthesis and (3D) Computer Vision.</div>
+      <div class="aside-card">
+        <div class="aside-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zm2 14h-4v-1h4v1zm0-2h-4v-.5a1 1 0 0 0-.55-.89C8.04 11.88 7 10.54 7 9a5 5 0 0 1 10 0c0 1.54-1.04 2.88-2.45 3.61a1 1 0 0 0-.55.89V14zm-5 6h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1z"/></svg>
+          Research Focus
+        </div>
+        <p>3D Generation, 3D Reconstruction, Gaussian Splatting, Isosurface &amp; Continuous 3D Representation Learning.</p>
       </div>
 
-      <div class="aside-section">
-        <strong>Academic Service</strong>
-        <div style="margin-top:6px;color:#333">Reviewer: CVPR2026, ICLR2026, 3DV2026, ICLR2025.</div>
+      <div class="aside-card">
+        <div class="aside-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+          Academic Service
+        </div>
+        <p><strong>Reviewer:</strong> NeurIPS 2026, CVPR 2026, 3DV 2027, ICLR 2026, ICLR 2025.</p>
       </div>
     </header>
 
+    <!-- Main Content Column -->
     <main class="content">
-      <section id="news" class="section news-list">
-        <h3 class="section">News</h3>
-        <p>Nov 2025 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One accepted paper at 3DV 2026.</p>
-        <p>May 2025 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One accepted paper at ECAI 2025.</p>
-        <p>July 2024 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I received PhD scholarship from Research for Ireland.</p>
-        <p style="margin-top:8px;color:var(--muted);font-size:13px"><a href="news.html">More...</a></p>
+
+      <!-- Sticky Quick Navigation Bar -->
+      <nav class="quick-nav" aria-label="Section Quick Jump">
+        <a href="#about" class="nav-pill active">About</a>
+        <a href="#news" class="nav-pill">News</a>
+        <a href="#publications" class="nav-pill">Publications</a>
+        <a href="#projects" class="nav-pill">Projects</a>
+        <a href="#modules" class="nav-pill">Teaching &amp; Modules</a>
+      </nav>
+      
+      <!-- About Section -->
+      <section id="about" class="section-block">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-title-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </span>
+            About Me
+          </h2>
+        </div>
+
+        <p class="about-text">
+          I am a CS PhD Student at <strong>Trinity College Dublin</strong>, working in the <strong>Graphics and Vision (GV2) Lab</strong> under the supervision of <strong>Dr. Binh-Son Hua</strong>. 
+          My research centers on <strong>3D Generation</strong> and <strong>3D computer vision</strong>.
+          Specifically, I investigate <strong>3D Reconstruction</strong>, <strong>Gaussian Splatting</strong>, <strong>Isosurfacing</strong>, and <strong>Continuous Masked Autoregressive Models</strong> for high-fidelity 3D geometric synthesis.
+        </p>
+
+        <div class="about-highlights">
+          <span class="topic-pill">✨ 3D Generation</span>
+          <span class="topic-pill">⚡ Continuous 3D Gen</span>
+          <span class="topic-pill">🔍 3D Reconstruction</span>
+          <span class="topic-pill">🌐 Gaussian Splatting</span>
+          <span class="topic-pill">📐 Isosurface</span>
+        </div>
       </section>
 
-      <section id="about" class="section">
-        <h3 class="section">About</h3>
-        <p>I am PhD Student at Trinity College Dublin under supervision of Dr. Binh-Son Hua. 
-            My research interests include conditional 3D Content Synthesis and (3D) Computer Vision. 
-            Specifically, I am interested in 3D-based Multi-view Diffusion Model, Diffusion and Flow Matching based Score Distillation, 
-            and Continuous Masked Autoregressive Model for Continuous 3D Generation.</p>
+      <!-- News Section -->
+      <section id="news" class="section-block">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-title-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5c-.55 0-1-.45-1-1V7h16v10c0 .55-.45 1-1 1zm-8-3h7v2h-7v-2zm0-4h7v2h-7v-2zM6 9h3v3H6V9zm0 5h3v3H6v-3z"/></svg>
+            </span>
+            News &amp; Updates
+          </h2>
+        </div>
+
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-date">2026</span>
+            <span class="news-text">📜 Invited to serve as Reviewer for <strong>NeurIPS 2026</strong>, <strong>CVPR 2026</strong>, and <strong>3DV 2027</strong>.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">Nov 2025</span>
+            <span class="news-text">🎉 One paper accepted at <strong>3DV 2026</strong> (Text-to-3D Generation via Jensen-Shannon Score Distillation).</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025</span>
+            <span class="news-text">📜 Invited to serve as Reviewer for <strong>ICLR 2026</strong>.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">May 2025</span>
+            <span class="news-text">📄 One paper accepted at <strong>ECAI 2025</strong> (Domain Generalization via Pareto Optimal Gradient Matching).</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2024</span>
+            <span class="news-text">📜 Invited to serve as Reviewer for <strong>ICLR 2025</strong>.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">Jul 2024</span>
+            <span class="news-text">🎓 Awarded prestigious <strong>PhD Scholarship</strong> from Research for Ireland (Trinity College Dublin).</span>
+          </div>
+        </div>
+
+        <div class="news-toggle-wrap">
+          <button class="more-news-btn" aria-expanded="false">More News &rarr;</button>
+        </div>
       </section>
 
-      <section id="publications" class="section pubs">
-        <h3 class="section">Publications</h3>
+      <!-- Dual-Stream Side-by-Side: Publications & Personal Projects -->
+      <div class="content-split-grid">
 
-        <div class="pubs-list">
-          <article class="pub">
-            <div class="pub-thumb">
-              <!-- replace with your thumbnail image -->
-              <img src="prjs/jsddreamer_3d2026.gif" alt="Diorama thumbnail">
+        <!-- Column 1: Publications Section -->
+        <section id="publications" class="section-block split-column-pubs">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="section-title-icon">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
+              </span>
+              Publications
+            </h2>
+            <span class="section-subtitle">Research Papers</span>
+          </div>
+
+          <!-- Scalable Filter & Search Controls -->
+          <div class="filter-wrapper">
+            <div class="filter-row">
+              <div class="filter-tabs" id="pub-topic-filters">
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="3d-vision">3D Vision</button>
+                <button type="button" class="filter-btn" data-filter="optimization">Optimization</button>
+                <button type="button" class="filter-btn" data-filter="segmentation">Segmentation</button>
+              </div>
+              
+              <div class="search-box">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                <input id="pub-search-input" class="search-input" type="text" placeholder="Search papers..." aria-label="Search publications">
+              </div>
             </div>
-            <div class="pub-meta">
-              <div class="pub-title"><a href="https://arxiv.org/abs/2503.10660">Text-to-3D Generation using Jensen-Shannon Score Distillation</a></div>
-              <div class="pub-authors">Khoi Do, Binh-Son Hua</div>
-              <div class="pub-venue">3DV 2026</div>
-              <div class="pub-links"><a href="https://arxiv.org/pdf/2503.10660">pdf</a> | <a href="https://github.com/trinity-graphics/jsddreamer">webpage</a></div>
+
+            <div class="filter-row" style="margin-top: 4px; border-top: 1px dashed var(--border-subtle); padding-top: 6px;">
+              <div class="filter-tabs" id="pub-year-filters">
+                <span style="font-size: 11px; font-weight: 700; color: var(--text-muted); margin-right: 2px;">YEAR:</span>
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="2026">2026</button>
+                <button type="button" class="filter-btn" data-filter="2025">2025</button>
+              </div>
             </div>
-          </article>
+          </div>
+
+          <div class="pubs-container">
+
+            <!-- Paper 1: JSDDreamer (3DV 2026) -->
+            <article class="pub-card" data-topic="3d-vision generative-ai diffusion" data-year="2026">
+              <div class="pub-thumb-wrap">
+                <img src="prjs/jsddreamer_3d2026.gif" alt="Text-to-3D Generation using Jensen-Shannon Score Distillation preview" loading="lazy">
+              </div>
+              <div class="pub-details">
+                <h3 class="pub-title">
+                  <a href="https://arxiv.org/abs/2503.10660" target="_blank" rel="noopener">Text-to-3D Generation using Jensen-Shannon Score Distillation</a>
+                </h3>
+                <div class="pub-authors">
+                  <span class="author-self">Khoi Do</span>, Binh-Son Hua
+                </div>
+                <div class="pub-meta-row">
+                  <span class="badge-venue">3DV 2026</span>
+                </div>
+                <div class="pub-actions">
+                  <a href="https://arxiv.org/pdf/2503.10660" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                    PDF
+                  </a>
+                  <a href="https://github.com/trinity-graphics/jsddreamer" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    Code
+                  </a>
+                  <a href="https://github.com/trinity-graphics/jsddreamer" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                  </a>
+                  <button type="button" class="action-chip bibtex-trigger" data-target="bibtex-jsd" aria-expanded="false">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    BibTeX
+                  </button>
+                </div>
+
+                <!-- BibTeX Drawer -->
+                <div id="bibtex-jsd" class="bibtex-drawer">
+                  <div class="bibtex-topbar">
+                    <span>BibTeX Citation</span>
+                    <button class="copy-bibtex-btn" data-bibtex="@inproceedings{do2026text,
+  title={Text-to-3D Generation using Jensen-Shannon Score Distillation},
+  author={Do, Khoi and Hua, Binh-Son},
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2026}
+}">Copy</button>
+                  </div>
+                  <pre class="bibtex-code"><code>@inproceedings{do2026text,
+  title={Text-to-3D Generation using Jensen-Shannon Score Distillation},
+  author={Do, Khoi and Hua, Binh-Son},
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2026}
+}</code></pre>
+                </div>
+              </div>
+            </article>
+
+            <!-- Paper 2: POGM (ECAI 2025) -->
+            <article class="pub-card" data-topic="optimization deep-learning vision" data-year="2025">
+              <div class="pub-thumb-wrap">
+                <img src="prjs/pogm_ecai2025.jpg" alt="Domain Generalization via Pareto Optimal Gradient Matching preview" loading="lazy">
+              </div>
+              <div class="pub-details">
+                <h3 class="pub-title">
+                  <a href="https://arxiv.org/abs/2507.14227" target="_blank" rel="noopener">Domain Generalization via Pareto Optimal Gradient Matching</a>
+                </h3>
+                <div class="pub-authors">
+                  <span class="author-self">Khoi Do</span>, Duong Nguyen, Nam-Khanh Le, Quoc-Viet Pham, Binh-Son Hua, Won-Joo Hwang
+                </div>
+                <div class="pub-meta-row">
+                  <span class="badge-venue">ECAI 2025</span>
+                </div>
+                <div class="pub-actions">
+                  <a href="https://arxiv.org/pdf/2507.14227" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                    PDF
+                  </a>
+                  <a href="https://github.com/skydvn/POGM" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    Code
+                  </a>
+                  <a href="https://github.com/skydvn/POGM" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                  </a>
+                  <button type="button" class="action-chip bibtex-trigger" data-target="bibtex-pogm" aria-expanded="false">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    BibTeX
+                  </button>
+                </div>
+
+                <!-- BibTeX Drawer -->
+                <div id="bibtex-pogm" class="bibtex-drawer">
+                  <div class="bibtex-topbar">
+                    <span>BibTeX Citation</span>
+                    <button class="copy-bibtex-btn" data-bibtex="@inproceedings{do2025domain,
+  title={Domain Generalization via Pareto Optimal Gradient Matching},
+  author={Do, Khoi and Nguyen, Duong and Le, Nam-Khanh and Pham, Quoc-Viet and Hua, Binh-Son and Hwang, Won-Joo},
+  booktitle={European Conference on Artificial Intelligence (ECAI)},
+  year={2025}
+}">Copy</button>
+                  </div>
+                  <pre class="bibtex-code"><code>@inproceedings{do2025domain,
+  title={Domain Generalization via Pareto Optimal Gradient Matching},
+  author={Do, Khoi and Nguyen, Duong and Le, Nam-Khanh and Pham, Quoc-Viet and Hua, Binh-Son and Hwang, Won-Joo},
+  booktitle={European Conference on Artificial Intelligence (ECAI)},
+  year={2025}
+}</code></pre>
+                </div>
+              </div>
+            </article>
+
+            <!-- Paper 3: PAT (Pattern Recognition Letters) -->
+            <article class="pub-card" data-topic="segmentation vision deep-learning" data-year="2026">
+              <div class="pub-thumb-wrap">
+                <img src="prjs/pat_prl2025.gif" alt="PAT: Pixel-wise Adaptive Training for Long-tailed Segmentation preview" loading="lazy">
+              </div>
+              <div class="pub-details">
+                <h3 class="pub-title">
+                  <a href="https://arxiv.org/abs/2404.05393" target="_blank" rel="noopener">PAT: Pixel-wise Adaptive Training for Long-tailed Segmentation</a>
+                </h3>
+                <div class="pub-authors">
+                  <span class="author-self">Khoi Do</span>, Duong Nguyen, Nguyen H. Tran, Viet-Dung Nguyen
+                </div>
+                <div class="pub-meta-row">
+                  <span class="badge-journal">Pattern Recognition Letters 2026</span>
+                </div>
+                <div class="pub-actions">
+                  <a href="https://arxiv.org/pdf/2404.05393" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                    PDF
+                  </a>
+                  <a href="https://github.com/KhoiDOO/ibla" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    Code
+                  </a>
+                  <a href="https://github.com/KhoiDOO/ibla" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                  </a>
+                  <button type="button" class="action-chip bibtex-trigger" data-target="bibtex-pat" aria-expanded="false">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    BibTeX
+                  </button>
+                </div>
+
+                <!-- BibTeX Drawer -->
+                <div id="bibtex-pat" class="bibtex-drawer">
+                  <div class="bibtex-topbar">
+                    <span>BibTeX Citation</span>
+                    <button class="copy-bibtex-btn" data-bibtex="@article{do2026pat,
+  title={PAT: Pixel-wise Adaptive Training for Long-tailed Segmentation},
+  author={Do, Khoi and Nguyen, Duong and Tran, Nguyen H. and Nguyen, Viet-Dung},
+  journal={Pattern Recognition Letters},
+  volume={192},
+  pages={43--50},
+  year={2026}
+}">Copy</button>
+                  </div>
+                  <pre class="bibtex-code"><code>@article{do2026pat,
+  title={PAT: Pixel-wise Adaptive Training for Long-tailed Segmentation},
+  author={Do, Khoi and Nguyen, Duong and Tran, Nguyen H. and Nguyen, Viet-Dung},
+  journal={Pattern Recognition Letters},
+  volume={192},
+  pages={43--50},
+  year={2026}
+}</code></pre>
+                </div>
+              </div>
+            </article>
+
+            <!-- Paper 4: TV-LARS (TAI 2025) -->
+            <article class="pub-card" data-topic="optimization deep-learning" data-year="2025">
+              <div class="pub-thumb-wrap">
+                <img src="prjs/tvlars_tai2025.jpg" alt="Revisiting LARS for Large Batch Training Generalization of Neural Networks preview" loading="lazy">
+              </div>
+              <div class="pub-details">
+                <h3 class="pub-title">
+                  <a href="https://arxiv.org/abs/2309.14053" target="_blank" rel="noopener">Revisiting LARS for Large Batch Training Generalization of Neural Networks</a>
+                </h3>
+                <div class="pub-authors">
+                  <span class="author-self">Khoi Do</span>, Duong Nguyen, Tien-Hoa Nguyen, Long Tran-Thanh, Nguyen H. Tran, Quoc-Viet Pham
+                </div>
+                <div class="pub-meta-row">
+                  <span class="badge-venue">IEEE TAI 2025</span>
+                </div>
+                <div class="pub-actions">
+                  <a href="https://arxiv.org/pdf/2309.14053" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                    PDF
+                  </a>
+                  <a href="https://github.com/KhoiDOO/ibla" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    Code
+                  </a>
+                  <a href="https://github.com/KhoiDOO/ibla" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                  </a>
+                  <button type="button" class="action-chip bibtex-trigger" data-target="bibtex-lars" aria-expanded="false">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    BibTeX
+                  </button>
+                </div>
+
+                <!-- BibTeX Drawer -->
+                <div id="bibtex-lars" class="bibtex-drawer">
+                  <div class="bibtex-topbar">
+                    <span>BibTeX Citation</span>
+                    <button class="copy-bibtex-btn" data-bibtex="@article{do2025revisiting,
+  title={Revisiting LARS for Large Batch Training Generalization of Neural Networks},
+  author={Do, Khoi and Nguyen, Duong and Nguyen, Tien-Hoa and Tran-Thanh, Long and Tran, Nguyen H. and Pham, Quoc-Viet},
+  journal={IEEE Transactions on Artificial Intelligence},
+  volume={6},
+  number={5},
+  pages={1321--1333},
+  year={2025}
+}">Copy</button>
+                  </div>
+                  <pre class="bibtex-code"><code>@article{do2025revisiting,
+  title={Revisiting LARS for Large Batch Training Generalization of Neural Networks},
+  author={Do, Khoi and Nguyen, Duong and Nguyen, Tien-Hoa and Tran-Thanh, Long and Tran, Nguyen H. and Pham, Quoc-Viet},
+  journal={IEEE Transactions on Artificial Intelligence},
+  volume={6},
+  number={5},
+  pages={1321--1333},
+  year={2025}
+}</code></pre>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- No Results Message -->
+          <div id="pub-no-results" class="no-results-msg">
+            No publications match your filter criteria.
+          </div>
+        </section>
+
+        <!-- Column 2: Personal & Open Source Projects Section (Ordered by Activity Timeline) -->
+        <section id="projects" class="section-block split-column-projects">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="section-title-icon">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+              </span>
+              Projects
+            </h2>
+            <span class="section-subtitle">Open Source Toolkits</span>
+          </div>
+
+          <!-- Project Filter Controls -->
+          <div class="filter-wrapper">
+            <div class="filter-row">
+              <div class="filter-tabs" id="project-filters">
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="3d-vision">3D &amp; CUDA</button>
+                <button type="button" class="filter-btn" data-filter="3d-gen">3D Gen &amp; AI</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            
+            <!-- Project 1: Conquer3D (Most Active) -->
+            <article class="project-card" data-topic="3d-vision cuda optimization">
+              <div class="project-thumb-wrap project-thumb-placeholder">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l-5.5 9h11z M12 22l5.5-9h-11z"/></svg>
+              </div>
+              <div class="project-details">
+                <div class="project-title-row">
+                  <h3 class="project-title">
+                    <a href="https://github.com/KhoiDOO/conquer3d/tree/main" target="_blank" rel="noopener">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2l-5.5 9h11z M12 22l5.5-9h-11z"/></svg>
+                      Conquer3D
+                    </a>
+                  </h3>
+                  <span class="project-badge">Active &bull; CUDA &amp; 3D</span>
+                </div>
+                <p class="project-desc">
+                  High-performance CUDA-accelerated 3D computer vision and differentiable geometry library with custom GPU kernels and PyTorch / PyBind11 bindings.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">CUDA</span>
+                  <span class="project-tag">C++ / PyBind11</span>
+                  <span class="project-tag">PyTorch</span>
+                  <span class="project-tag">3D Geometry</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/KhoiDOO/conquer3d/tree/main" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                  </a>
+                  <a href="https://github.com/KhoiDOO/conquer3d/tree/main" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Docs
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Digit3D -->
+            <article class="project-card" data-topic="3d-gen diffusion">
+              <div class="project-thumb-wrap">
+                <img src="prjs/digit3d_trajectory.gif" alt="Digit3D Multi-view Synthesis Teaser" loading="lazy">
+              </div>
+              <div class="project-details">
+                <div class="project-title-row">
+                  <h3 class="project-title">
+                    <a href="https://github.com/KhoiDOO/digit3d" target="_blank" rel="noopener">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2l-5.5 9h11z M12 22l5.5-9h-11z"/></svg>
+                      Digit3D
+                    </a>
+                  </h3>
+                  <span class="project-badge">Active &bull; 3D Gen</span>
+                </div>
+                <p class="project-desc">
+                  Open-source digital 3D content creation and multi-view diffusion framework for continuous 3D asset generation and camera-conditioned score distillation.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">PyTorch</span>
+                  <span class="project-tag">Diffusion</span>
+                  <span class="project-tag">Multi-View</span>
+                  <span class="project-tag">Score Distillation</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/KhoiDOO/digit3d" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                  </a>
+                  <a href="https://khoidoo.github.io/digit3d/" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: PointMAR -->
+            <article class="project-card" data-topic="3d-gen generative-ai">
+              <div class="project-thumb-wrap">
+                <img src="prjs/pointmar_sample.gif" alt="PointMAR Continuous 3D Representation Teaser" loading="lazy">
+              </div>
+              <div class="project-details">
+                <div class="project-title-row">
+                  <h3 class="project-title">
+                    <a href="https://github.com/KhoiDOO/pointmar/tree/main" target="_blank" rel="noopener">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2l-5.5 9h11z M12 22l5.5-9h-11z"/></svg>
+                      PointMAR
+                    </a>
+                  </h3>
+                  <span class="project-badge">Continuous 3D AI</span>
+                </div>
+                <p class="project-desc">
+                  Continuous Masked Autoregressive (MAR) model and generative framework for high-fidelity 3D point cloud synthesis and geometric representation learning.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">PyTorch</span>
+                  <span class="project-tag">Masked Autoregressive</span>
+                  <span class="project-tag">Point Clouds</span>
+                  <span class="project-tag">Generative AI</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/KhoiDOO/pointmar/tree/main" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                  </a>
+                  <a href="https://github.com/KhoiDOO/pointmar/tree/main" target="_blank" rel="noopener" class="action-chip">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                    Code &amp; Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Teaching & Modules Section -->
+      <section id="modules" class="section-block">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-title-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+            </span>
+            Teaching &amp; Modules
+          </h2>
+          <span class="section-subtitle">Academic Modules</span>
         </div>
 
-        <div class="pubs-list">
-          <article class="pub">
-            <div class="pub-thumb">
-              <!-- replace with your thumbnail image -->
-              <img src="prjs/pogm_ecai2025.jpg" alt="Diorama thumbnail">
+        <div class="modules-grid">
+          <!-- Module 1: Computer Graphics CSU44052 -->
+          <div class="module-card">
+            <div class="module-header">
+              <span class="module-code">CSU44052</span>
+              <span class="module-term">Winter 2025 &amp; Winter 2024</span>
             </div>
-            <div class="pub-meta">
-              <div class="pub-title"><a href="https://arxiv.org/abs/2507.14227">Domain Generalization via Pareto Optimal Gradient Matching</a></div>
-              <div class="pub-authors">Khoi Do, Nam-Khanh Le, Quoc-Viet Phama, Binh-Son Hua, Won-Joo Hwang, and Duong Nguyen</div>
-              <div class="pub-venue">ECAI 2025</div>
-              <div class="pub-links"><a href="https://arxiv.org/pdf/2507.14227">pdf</a> | <a href="https://github.com/skydvn/POGM">webpage</a></div>
-            </div>
-          </article>
-        </div>
-        
-        <div class="pubs-list">
-          <article class="pub">
-            <div class="pub-thumb">
-              <!-- replace with your thumbnail image -->
-              <img src="prjs/pat_prl2025.gif" alt="Diorama thumbnail">
-            </div>
-            <div class="pub-meta">
-              <div class="pub-title"><a href="https://arxiv.org/abs/2404.05393">PAT: Pixel-wise Adaptive Training for Long-tailed Segmentation</a></div>
-              <div class="pub-authors">Khoi Do, Minh-Duong Nguyen, Nguyen H. Tran, Viet Dung Nguyen</div>
-              <div class="pub-venue">ECAI 2025</div>
-              <div class="pub-links"><a href="https://arxiv.org/pdf/2404.05393">pdf</a> | <a href="https://github.com/KhoiDOO/ibla">webpage</a></div>
-            </div>
-          </article>
-        </div>
+            <h3 class="module-title">Computer Graphics</h3>
+            <p class="module-inst">School of Computer Science &amp; Statistics, Trinity College Dublin</p>
+            <p class="module-role"><strong>Role:</strong> Teaching Assistant &bull; <strong>Lecturer:</strong> Prof. Binh-Son Hua</p>
+          </div>
 
-        <div class="pubs-list">
-          <article class="pub">
-            <div class="pub-thumb">
-              <!-- replace with your thumbnail image -->
-              <img src="prjs/tvlars_tai2025.jpg" alt="Diorama thumbnail">
+          <!-- Module 2: Microprocessor System CSU23021 -->
+          <div class="module-card">
+            <div class="module-header">
+              <span class="module-code">CSU23021</span>
+              <span class="module-term">Spring 2025</span>
             </div>
-            <div class="pub-meta">
-              <div class="pub-title"><a href="https://arxiv.org/abs/2309.14053">Revisiting LARS for Large Batch Training Generalization of Neural Networks</a></div>
-              <div class="pub-authors">Khoi Do, Minh-Duong Nguyen, Nguyen Tien Hoa, Long Tran-Thanh</div>
-              <div class="pub-venue">TAI 2025</div>
-              <div class="pub-links"><a href="https://arxiv.org/pdf/2309.14053">pdf</a> | <a href="https://github.com/KhoiDOO/ibla">webpage</a></div>
-            </div>
-          </article>
-        </div>
+            <h3 class="module-title">Microprocessor Systems</h3>
+            <p class="module-inst">School of Computer Science &amp; Statistics, Trinity College Dublin</p>
+            <p class="module-role"><strong>Role:</strong> Teaching Assistant &bull; <strong>Lecturer:</strong> Prof. Quoc-Viet Pham</p>
+          </div>
 
+          <!-- Module 3: Machine Learning for Medical Systems ET4248E -->
+          <div class="module-card">
+            <div class="module-header">
+              <span class="module-code">ET4248E</span>
+              <span class="module-term">Spring 2024</span>
+            </div>
+            <h3 class="module-title">Machine Learning for Medical Systems</h3>
+            <p class="module-inst">School of Electrical &amp; Electronic Engineering</p>
+            <p class="module-role"><strong>Role:</strong> Teaching Assistant &bull; <strong>Lecturer:</strong> Dr. Viet-Dung Nguyen</p>
+          </div>
+
+          <!-- Module 4: Information Theory ET2072E -->
+          <div class="module-card">
+            <div class="module-header">
+              <span class="module-code">ET2072E</span>
+              <span class="module-term">Spring 2023</span>
+            </div>
+            <h3 class="module-title">Information Theory</h3>
+            <p class="module-inst">School of Electrical &amp; Electronic Engineering</p>
+            <p class="module-role"><strong>Role:</strong> Teaching Assistant &bull; <strong>Lecturer:</strong> Prof. Tien-Hoa Nguyen</p>
+          </div>
+        </div>
       </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <p>&copy; 2026 Hoang Khoi Do &bull; Hosted on GitHub Pages</p>
+      </footer>
+
     </main>
   </div>
 
-  <script src="scripts.js"></script>
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
 
+  <script src="scripts.js"></script>
 </body>
 </html>
