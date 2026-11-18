@@ -57,7 +57,7 @@ function initScrollSpy() {
 
 // News toggle controller (collapses items beyond N)
 function initNewsToggle() {
-  const N = 4; // number of news items to show initially
+  const N = 10; // number of news items to show initially
   const newsList = document.querySelector('.news-list');
   const toggleWrap = document.querySelector('.news-toggle-wrap');
   const toggleBtn = document.querySelector('.more-news-btn');
@@ -83,7 +83,7 @@ function initNewsToggle() {
       expanded = !expanded;
       
       hiddenItems.forEach(item => {
-        item.style.display = expanded ? 'flex' : 'none';
+        item.style.display = expanded ? '' : 'none';
       });
 
       toggleBtn.innerHTML = expanded ? 'Show Less &uarr;' : 'More News &rarr;';
